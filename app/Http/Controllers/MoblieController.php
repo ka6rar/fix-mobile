@@ -84,12 +84,13 @@ class MoblieController extends Controller
             'cassdev' =>   $moblie->cassdev   ,
             'namegiv' =>   $moblie->namegiv   ,
             'timegiv' =>   $moblie->timegiv   ,
+            'id'      =>  $moblie->id   ,
 
         ];
 
         return $pdf = PDF::loadView('moble.pdf', $data)
-        ->stream();
-       
+        ->download();
+        // stream
     }
 
 }

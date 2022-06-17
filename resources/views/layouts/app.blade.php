@@ -97,9 +97,7 @@
                 </div> --}}
                 <!-- Container-fluid starts-->
                 <div class="container-fluid">
-                    <main class="py-4">
                         @yield('content')
-                    </main>
                 </div>
                 <!-- Container-fluid Ends-->
             </div>

@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('content')
     <div class="container" style="font-size: 16px;  font-family: 'Cairo', sans-serif; font-weight: bold" >
+    </br>
+    </br>
+
         <div class="card">
             <div class="card-header">
                 <h5>كل الاجهز </h5>
@@ -9,6 +12,7 @@
                 <table class="table">
                     <thead>
                         <tr>
+                            <th scope="col">التسلسل</th>
                             <th scope="col">اسم الزبون</th>
                             <th scope="col">رقم الهاتف</th>
                             <th scope="col">نوع الجهاز</th>
@@ -21,6 +25,7 @@
                     <tbody>
                         @foreach ($moblies as $moblie)
                         <tr>
+                            <td>{{$moblie->id}}</td>
                             <td>{{$moblie->nameperson}}</td>
                             <td>{{$moblie->numberperson}}</td>
                             <td>{{$moblie->typedev}}</td>

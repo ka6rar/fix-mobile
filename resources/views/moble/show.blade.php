@@ -11,6 +11,10 @@
                         <table class="table">
                             <tbody>
                                 <tr>
+                                    <th scope="row">تسلسل الزبون</th>
+                                    <td>{{ $moblie->id }}</td>
+                                </tr>
+                                <tr>
                                     <th scope="row">اسم الزبون</th>
                                     <td>{{ $moblie->nameperson }}</td>
                                 </tr>
