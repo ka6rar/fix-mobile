@@ -75,10 +75,21 @@ class MoblieController extends Controller
         $moblie =   Moble::find($id);
         $data = [
             'moblie' => $moblie->nameperson,
+            'numberperson' => $moblie->numberperson,
+            'typedev'  => $moblie->typedev   ,
+            'colordev'     => $moblie->colordev  , 
+            'typedisply' =>  $moblie->typedisply   ,
+            'priscall' =>  $moblie->priscall   ,
+            'stutstype' =>  $moblie->stutstype   ,
+            'cassdev' =>   $moblie->cassdev   ,
+            'namegiv' =>   $moblie->namegiv   ,
+            'timegiv' =>   $moblie->timegiv   ,
+
         ];
 
-        $pdf = PDF::loadView('moble.pdf', $data)->setOptions(['dpi' => 150, 'defaultFont' => 'sans-serif']);;
-        return $pdf->download('moblie.pdf');
+        return $pdf = PDF::loadView('moble.pdf', $data)
+        ->stream();
+       
     }
 
 }

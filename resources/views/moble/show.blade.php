@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="font-size: 16px;  font-family: 'Cairo', sans-serif; font-weight: bold" dir="rtl" >
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Basic Table</h5><span>Use a class<code>table</code> to any table.</span>
+                        <h5>صيانة</h5><span>{{$moblie->typedev }}</span>
                     </div>
-                    <div class="table-responsive">
+                    <div class="table-responsive" >
                         <table class="table">
                             <tbody>
                                 <tr>
@@ -39,7 +39,7 @@
 
                                 </tr>
                                 <tr>
-                                    <th scope="row">كلفة الصيانة</t h>
+                                    <th scope="row">كلفة الصيانة</th>
                                     <td>{{ $moblie->priscall }}</td>
 
 
@@ -69,10 +69,12 @@
                             </tbody>
                         </table>
                     </div>
-                    <a href="{{ route('moble.print' , ['id' => $moblie->id]) }}">print</a>
+                   
                 </div>
             </div>
+          
         </div>
+        <a class="btn btn-info" href="{{ route('moble.print' , ['id' => $moblie->id]) }}">طباعة</a>
     </div>
     </div>
     </div>

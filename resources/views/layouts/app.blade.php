@@ -9,9 +9,9 @@
     <meta name="keywords"
         content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../../assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
-    <title>Cuba - Premium Admin Template</title>
+    <link rel="icon" href="../.../../assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../assets/images/favicon.png" type="image/x-icon">
+    <title>صيانة</title>
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap"
         rel="stylesheet">
@@ -47,7 +47,7 @@
 
 </head>
 
-<body onload="startTime()">
+<body onload="startTime()" style="font-size: 16px;  font-family: 'Cairo', sans-serif;">
     <!-- loader starts-->
     <div class="loader-wrapper">
         <div class="loader-index"><span></span></div>

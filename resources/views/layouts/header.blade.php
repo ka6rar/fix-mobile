@@ -1,6 +1,6 @@
 <div class="page-header">
     <div class="header-wrapper row m-0">
-        <form class="form-inline search-full col" action="#" method="get">
+        {{-- <form class="form-inline search-full col" action="#" method="get">
             <div class="form-group w-100">
                 <div class="Typeahead Typeahead--twitterUsers">
                     <div class="u-posRelative">
@@ -13,15 +13,15 @@
                     <div class="Typeahead-menu"></div>
                 </div>
             </div>
-        </form>
+        </form> --}}
         <div class="header-logo-wrapper col-auto p-0">
             <div class="logo-wrapper"><a href="index.html"><img class="img-fluid"
-                        src="../assets/images/logo/logo.png" alt=""></a></div>
+                        src="../../assets/images/logo/logo.png" alt=""></a></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i>
             </div>
         </div>
         <div class="left-header col horizontal-wrapper ps-0">
-            <ul class="horizontal-menu">
+            {{-- <ul class="horizontal-menu">
                 <li class="mega-menu outside"><a class="nav-link" href="#!"><i
                             data-feather="layers"></i><span>Bonus Ui</span></a>
                     <div class="mega-menu-container nav-submenu menu-to-be-close header-mega">
@@ -148,7 +148,7 @@
                                     data-feather="zap"></i><span>Social App </span></a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul> --}}
         </div>
         <div class="nav-right col-8 pull-right right-header p-0">
             <ul class="nav-menus">
@@ -176,8 +176,8 @@
                         </div>
                     </div>
                 </li> --}}
-                <li> <span class="header-search"><i data-feather="search"></i></span></li>
-                <li class="onhover-dropdown">
+                {{-- <li> <span class="header-search"><i data-feather="search"></i></span></li> --}}
+                {{-- <li class="onhover-dropdown">
                     <div class="notification-box"><i data-feather="bell"> </i><span
                             class="badge rounded-pill badge-secondary">4 </span></div>
                     <div class="onhover-show-div notification-dropdown">
@@ -198,8 +198,8 @@
                             <li><a class="f-w-700" href="#">Check all</a></li>
                         </ul>
                     </div>
-                </li>
-                <li class="onhover-dropdown">
+                </li> --}}
+                {{-- <li class="onhover-dropdown">
                     <div class="notification-box"><i data-feather="star"></i></div>
                     <div class="onhover-show-div bookmark-flip">
                         <div class="flip-card">
@@ -247,11 +247,11 @@
                             </div>
                         </div>
                     </div>
-                </li>
-                <li>
+                </li> --}}
+                {{-- <li>
                     <div class="mode"><i class="fa fa-moon-o"></i></div>
-                </li>
-                <li class="cart-nav onhover-dropdown">
+                </li> --}}
+                {{-- <li class="cart-nav onhover-dropdown">
                     <div class="cart-box"><i data-feather="shopping-cart"></i><span
                             class="badge rounded-pill badge-primary">2</span></div>
                     <div class="cart-dropdown onhover-show-div">
@@ -306,8 +306,8 @@
                                     href="checkout.html">Checkout</a></li>
                         </ul>
                     </div>
-                </li>
-                <li class="onhover-dropdown"><i data-feather="message-square"></i>
+                </li> --}}
+                {{-- <li class="onhover-dropdown"><i data-feather="message-square"></i>
                     <div class="chat-dropdown onhover-show-div">
                         <h6 class="f-18 mb-0 dropdown-title">Messages</h6>
                         <ul class="py-0">
@@ -344,7 +344,7 @@
                             <li class="text-center"> <a class="f-w-700" href="#">View All </a></li>
                         </ul>
                     </div>
-                </li>
+                </li> --}}
                 <li class="maximize"><a class="text-dark" href="#!"
                         onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
                 <li class="profile-nav onhover-dropdown p-0 me-0">
@@ -356,7 +356,7 @@
                     </div>
                     @else 
                     <div class="media profile-media"><img class="b-r-10"
-                        src="../assets/images/dashboard/profile.jpg" alt="">
+                        src="../../assets/images/dashboard/profile.jpg" alt="">
                     <div class="media-body"><span>{{Auth()->user()->name}}</span>
                         <p class="mb-0 font-roboto">Admin <i class="middle fa fa-angle-down"></i></p>
                     </div>

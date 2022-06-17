@@ -1,5 +1,5 @@
           <div >
-            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="../../assets/images/logo/logo.png" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a>
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="../../assets/images/pdfimg/MegaPng.png" width="70px" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a>
               <div class="back-btn"><i class="fa fa-angle-left"></i></div>
               <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
             </div>
@@ -13,8 +13,8 @@
                   </li>
                   <li class="sidebar-main-title">
                     <div>
-                      <h6 class="lan-1">General</h6>
-                      <p class="lan-2">Dashboards,widgets & layout.</p>
+                      <h6 class="lan-0">Mega Tech</h6>
+                      <p class="lan-0">لصيانة  الاجهزة</p>
                     </div>
                   </li>
                   <li class="sidebar-list">
@@ -28,7 +28,7 @@
                   <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="airplay"></i><span class="lan-611" style="font-family: 'Cairo', sans-serif;">الاجهزة</span></a>
                     <ul class="sidebar-submenu" >
                       <li > <a href="{{ route('moble.create') }}"  style="font-size: 16px ;font-family: 'Cairo', sans-serif;">اضافة جهاز</a></li>
-                      <li ><a href="chart-widget.html"  style="font-size: 16px;  font-family: 'Cairo', sans-serif;"">عرض الجهاز</a></li>
+                      <li ><a href="{{ route('moble.index') }}"  style="font-size: 16px;  font-family: 'Cairo', sans-serif;">عرض الجهاز</a></li>
                     </ul>
                   </li>
                   {{-- <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="layout"></i><span class="lan-7">جهاز</span></a>
