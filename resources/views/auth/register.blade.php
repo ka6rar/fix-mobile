@@ -1,4 +1,8 @@
-@extends('layouts.app')
+@php
+header('Location: ' . $_SERVER['HTTP_REFERER']);
+@endphp
+
+{{-- @extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -74,4 +78,4 @@
         </div>
     </div>
 </div>
-@endsection
+@endsection --}}

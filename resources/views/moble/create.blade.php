@@ -13,7 +13,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <label class="col-form-label-sm" for="colFormLabelSm26"> اسم الزبون </label>
-                            <input name="nameperson" class="form-control form-control-lg" id="colFormLabelSm26" type="text" placeholder="ادخل اسم الزبون" data-bs-original-title="" title="">
+                            <input style="font-weight: bold" name="nameperson" class="form-control form-control-lg" id="colFormLabelSm26" type="text" placeholder="ادخل اسم الزبون" data-bs-original-title="" title="">
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <label for="exampleInputPassword27">رقم الهاتف</label>
-                            <input name="numberperson" class="form-control" id="exampleInputPassword27" type="number" placeholder="ادخل رقم الهاتف" data-bs-original-title="" title="">
+                            <input style="font-weight: bold" name="numberperson" class="form-control" id="exampleInputPassword27" type="number" placeholder="ادخل رقم الهاتف" data-bs-original-title="" title="">
                         </div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <label class="col-form-label-sm" for="colFormLabelSm28">نوع الجهاز </label>
-                            <input name="typedev" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل نوع الجهاز" data-bs-original-title="" title="">
+                            <input style="font-weight: bold" name="typedev" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل نوع الجهاز" data-bs-original-title="" title="">
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <label class="col-form-label-sm" for="colFormLabelSm28">لون الجهاز </label>
-                            <input name="colordev" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل لون نوع الجهاز " data-bs-original-title="" title="">
+                            <input style="font-weight: bold" name="colordev" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل لون نوع الجهاز " data-bs-original-title="" title="">
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <label class="col-form-label-sm" for="colFormLabelSm28"> كلفة الصيانة</label>
-                            <input name="priscall" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل كلفة الصيانة" data-bs-original-title="" title="">
+                            <input style="font-weight: bold"  name="priscall" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل كلفة الصيانة" data-bs-original-title="" title="">
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <label class="col-form-label-sm" for="colFormLabelSm28"> حالة الجهاز </label>
-                            <input name="stutstype" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل   حالة الجهاز " data-bs-original-title="" title="">
+                            <input style="font-weight: bold"  name="stutstype" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل   حالة الجهاز " data-bs-original-title="" title="">
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <label class="col-form-label-sm" for="colFormLabelSm28"> ملحقات الجهاز  </label>
-                            <input name="cassdev" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل  ملحقات الجهاز " data-bs-original-title="" title="">
+                            <input style="font-weight: bold" name="cassdev" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل  ملحقات الجهاز " data-bs-original-title="" title="">
                         </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <label class="col-form-label-sm" for="colFormLabelSm28"> اسم  المستلم  </label>
-                            <input name="namegiv" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل اسم  المستلم " data-bs-original-title="" title="">
+                            <input disabled style="font-weight: bold" name="namegiv" value="{{Auth::user()->name}}" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل اسم  المستلم " data-bs-original-title="" title="">
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <label  class="col-form-label-sm" for="colFormLabelSm28">تاريخ الاستلام</label>
-                            <input name="timegiv" class="datepicker-here form-control digits" type="text" data-language="en" data-bs-original-title="" title="" placeholder="ادخل تاريخ الاستلام">
+                            <input style="font-weight: bold"  name="timegiv" class="datepicker-here form-control digits" type="text" data-language="en" data-bs-original-title="" title="" placeholder="ادخل تاريخ الاستلام">
                         </div>
                     </div>
                 </div>
