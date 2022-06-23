@@ -89,7 +89,7 @@ class MoblieController extends Controller
         ];
 
         return $pdf = PDF::loadView('moble.pdf', $data)
-        ->download();
+        ->stream();
         // stream
     }
 

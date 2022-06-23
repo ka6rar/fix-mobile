@@ -77,7 +77,7 @@
                     <div class="col">
                         <div class="mb-3">
                             <label class="col-form-label-sm" for="colFormLabelSm28"> اسم  المستلم  </label>
-                            <input disabled style="font-weight: bold" name="namegiv" value="{{Auth::user()->name}}" class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل اسم  المستلم " data-bs-original-title="" title="">
+                            <input  style="font-weight: bold" name="namegiv"  class="form-control form-control-sm" id="colFormLabelSm28" type="text" placeholder="ادخل اسم  المستلم " data-bs-original-title="" title="">
                         </div>
                     </div>
                 </div>
