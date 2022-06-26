@@ -55,7 +55,7 @@ class MoblieController extends Controller
 
 
         $moblie->save();
-        return  redirect()->back();
+        return  view('moble.show' , compact('moblie'));
     }
 
 

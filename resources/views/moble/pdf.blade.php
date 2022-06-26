@@ -104,7 +104,7 @@
     <div id="customers">
         <p style="margin: 0px 7px 0px 0px;font-size: 17px">أسم الزبون: {{ $moblie }}</p>
         <p style="margin: 0px 7px 0px 0px;font-size: 17px">تاريخ الاستلام: {{ $timegiv }}</p>
-        <p style="margin: 0px 7px 0px 0px;font-size: 17px">نسخة الشركة</p>
+        <p style="margin: 0px 7px 0px 0px;font-size: 17px">نسخة الشركة : {{$id}} </p>
         <table class="table">
             <tbody>
                 <tr>

@@ -1,7 +1,3 @@
-@php
-header('Location: ' . $_SERVER['HTTP_REFERER']);
-@endphp
-
 {{-- @extends('layouts.app')
 
 @section('content')
