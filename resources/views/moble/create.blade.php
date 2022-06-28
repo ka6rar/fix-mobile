@@ -89,6 +89,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label  class="col-form-label-sm" for="colFormLabelSm28">ملاحظة</label>
+                            <textarea style="font-weight: bold"  name="note" class="datepicker-here form-control digits" type="text" data-language="en" data-bs-original-title="" title="" placeholder="ادخل تاريخ الاستلام"> </textarea>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="card-footer">
                 <button class="btn btn-primary" type="submit" data-bs-original-title="" title="">ارسال</button>

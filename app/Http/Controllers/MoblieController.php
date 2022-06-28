@@ -37,6 +37,7 @@ class MoblieController extends Controller
         $moblie->cassdev =  $request->cassdev;
         $moblie->namegiv =  $request->namegiv;
         $moblie->timegiv =  $request->timegiv;
+        $moblie->note =  $request->note;
 
    
             // $data =  [
@@ -74,17 +75,17 @@ class MoblieController extends Controller
     {
         $moblie =   Moble::find($id);
         $data = [
-            'moblie' => $moblie->nameperson,
-            'numberperson' => $moblie->numberperson,
-            'typedev'  => $moblie->typedev   ,
-            'colordev'     => $moblie->colordev  , 
-            'typedisply' =>  $moblie->typedisply   ,
-            'priscall' =>  $moblie->priscall   ,
-            'stutstype' =>  $moblie->stutstype   ,
-            'cassdev' =>   $moblie->cassdev   ,
-            'namegiv' =>   $moblie->namegiv   ,
-            'timegiv' =>   $moblie->timegiv   ,
-            'id'      =>  $moblie->id   ,
+            'moblie'         => $moblie->nameperson,
+            'numberperson'   => $moblie->numberperson,
+            'typedev'        => $moblie->typedev   ,
+            'colordev'       => $moblie->colordev  , 
+            'typedisply'     =>  $moblie->typedisply   ,
+            'priscall'       =>  $moblie->priscall   ,
+            'stutstype'      =>  $moblie->stutstype   ,
+            'cassdev'        =>   $moblie->cassdev   ,
+            'namegiv'        =>   $moblie->namegiv   ,
+            'timegiv'        =>   $moblie->timegiv   ,
+            'id'             =>  $moblie->id   ,
 
         ];
 
