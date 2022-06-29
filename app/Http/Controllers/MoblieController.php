@@ -86,6 +86,7 @@ class MoblieController extends Controller
             'namegiv'        =>   $moblie->namegiv   ,
             'timegiv'        =>   $moblie->timegiv   ,
             'id'             =>  $moblie->id   ,
+            'note'           =>  $moblie->note   ,
 
         ];
 
@@ -93,5 +94,10 @@ class MoblieController extends Controller
         ->stream();
         // stream
     }
+
+
+
+
+    
 
 }

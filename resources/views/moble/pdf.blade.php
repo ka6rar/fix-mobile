@@ -155,7 +155,7 @@
     font-weight: bold;
     font-size: 13px
     ">
-            ملاحظة  : {{$namegiv}}
+            ملاحظة  : {{$note}}
         </div>
     </div>
 </body>

@@ -25,6 +25,7 @@ class CreateMoblesTable extends Migration
             $table->string('cassdev');
             $table->string('namegiv');
             $table->string('timegiv');
+            $table->string('note');
             $table->timestamps();
         });
     }
