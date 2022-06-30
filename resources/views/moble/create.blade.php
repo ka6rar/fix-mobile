@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="container">
     <div class="card"  style="font-size: 16px;  font-family: 'Cairo', sans-serif; font-weight: bold">
@@ -103,6 +102,18 @@
                 <input class="btn btn-light" type="reset" value="تفريغ" data-bs-original-title="" title="">
             </div>
         </form>
+        <br/>
+        @if(count($errors->all()) > 0)
+        <div class="alert alert-default text-danger">
+            <ul>
+                @foreach($errors->all() as $error)
+                <br/>
+                 <li>{{ $error }}</li>
+                 <br/>
+                @endforeach
+            </ul>
+        </div>
+       @endif
     </div>
-</div>
+
 @endsection

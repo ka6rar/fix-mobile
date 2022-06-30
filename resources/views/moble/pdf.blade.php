@@ -157,6 +157,16 @@
     ">
             ملاحظة  : {{$note}}
         </div>
+        <div
+        style="            background-color: #F7F7F7;
+            border: 1px solid #ccc;
+
+color: #333;
+font-weight: bold;
+font-size: 13px
+">
+        ملاحظة الشركة  : 
+    </div>
     </div>
 </body>
 
