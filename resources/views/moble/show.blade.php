@@ -76,10 +76,18 @@
                    
                 </div>
             </div>
-          
+            @if (session('seuccs'))
+            <div class="alert alert-dismissible alert-success">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong style="text-align: center"> تم </strong> {{ session('seuccs')}}
+            </div>
+            @endif
         </div>
-        <a class="btn btn-info" href="{{ route('moble.print' , ['id' => $moblie->id]) }}">طباعة</a>
+        <a class="btn btn-info" href="{{ route('moble.print' ,    ['id' => $moblie->id]) }}">طباعة</a>
+        <a class="btn btn-warning " href="{{ route('moble.edit' , ['id' => $moblie->id]) }}">تعديل</a>
     </div>
     </div>
+
+
     </div>
 @endsection

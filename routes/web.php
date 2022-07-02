@@ -26,3 +26,5 @@ Route::get('moble/index',   [App\Http\Controllers\MoblieController::class, 'inde
 Route::post('moble/store',   [App\Http\Controllers\MoblieController::class, 'store'])->name('moble.store');
 Route::get('moble/show/{id}', [App\Http\Controllers\MoblieController::class, 'show'])->name('moble.show');
 Route::get('moble/pdf/{id}', [App\Http\Controllers\MoblieController::class, 'print'])->name('moble.print');
+Route::get('moble/edit/{id}', [App\Http\Controllers\MoblieController::class, 'edit'])->name('moble.edit');
+Route::post('moble/update/{id}', [App\Http\Controllers\MoblieController::class, 'update'])->name('moble.update');

@@ -26,6 +26,7 @@ class CreateMoblesTable extends Migration
             $table->string('namegiv');
             $table->string('timegiv');
             $table->string('note');
+            $table->string('status');
             $table->timestamps();
         });
     }

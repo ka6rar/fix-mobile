@@ -1,8 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="container" style="font-size: 16px;  font-family: 'Cairo', sans-serif; font-weight: bold" >
-    </br>
-    </br>
+
 
         <div class="card">
             <div class="card-header">
@@ -40,6 +39,8 @@
                     </tbody>
                 </table>
             </div>
+         
         </div>
+     
     </div>
 @endsection

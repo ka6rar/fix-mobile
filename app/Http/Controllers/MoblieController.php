@@ -9,6 +9,12 @@ use PDF;
 class MoblieController extends Controller
 {
 
+    
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
 
 
     public function index() 
@@ -27,21 +33,33 @@ class MoblieController extends Controller
     public function store(Request $request) 
     {
         $moblie =  new Moble();
+        $moblie->nameperson =  $request->nameperson;
+        $moblie->numberperson =  $request->numberperson;
+        $moblie->typedev =  $request->typedev;
+        $moblie->colordev =  $request->colordev;
+        $moblie->typedisply =  $request->typedisply;
+        $moblie->priscall =  $request->priscall;
+        $moblie->stutstype =  $request->stutstype;
+        $moblie->cassdev =  $request->cassdev;
+        $moblie->namegiv =  $request->namegiv;
+        $moblie->timegiv =  $request->timegiv;
+        $moblie->note =  $request->note;
+        $moblie->status =  0 ;
 
-
+   
 
         $request->validate([
-            'nameperson' => ['required', 'max:255'],
+            'nameperson' =>   ['required', 'max:255'],
             'numberperson' => ['required'],
-            'typedev' => ['required'],
-            'colordev' => ['required'],
-            'typedisply' => ['required'],
-            'priscall' => ['required'],
-            'stutstype' => ['required'],
-            'cassdev' => ['required'],
-            'namegiv' => ['required'],
-            'timegiv' => ['required'],
-            'note' => ['required'],
+            'typedev' =>      ['required'],
+            'colordev' =>     ['required'],
+            'typedisply' =>   ['required'],
+            'priscall' =>     ['required'],
+            'stutstype' =>    ['required'],
+            'cassdev' =>      ['required'],
+            'namegiv' =>      ['required'],
+            'timegiv' =>      ['required'],
+            'note' =>         ['required'],
         ]);
 
 
@@ -99,12 +117,34 @@ class MoblieController extends Controller
 
         return $pdf = PDF::loadView('moble.pdf', $data)
         ->stream();
-        // stream
     }
 
 
 
 
-    
+    public function edit($id) {
+        $moblie =   Moble::find($id);
+        return  view('moble.edit' , compact('moblie'));
+    }
 
+
+    public function update(Request $request, $id) 
+    {
+        $moblie =   Moble::find($id);
+        $moblie->nameperson =  $request->nameperson;
+        $moblie->numberperson =  $request->numberperson;
+        $moblie->typedev =  $request->typedev;
+        $moblie->colordev =  $request->colordev;
+        $moblie->typedisply =  $request->typedisply;
+        $moblie->priscall =  $request->priscall;
+        $moblie->stutstype =  $request->stutstype;
+        $moblie->cassdev =  $request->cassdev;
+        $moblie->namegiv =  $request->namegiv;
+        $moblie->timegiv =  $request->timegiv;
+        $moblie->note =  $request->note;
+        $moblie->status = $request->status ;
+        $moblie->save();
+        return redirect()->back()->with('seuccs' , 'seuccs');
+
+    }
 }
