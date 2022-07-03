@@ -18,6 +18,7 @@
                             <th scope="col">كلفة الصيانة</th>
                             <th scope="col">اسم المستلم</th>
                             <th scope="col">تاريخ الاستلام</th>
+                            <th scope="col">حالة الجهاز</th>
                             <th scope="col">التفاصيل</th>
                         </tr>
                     </thead>
@@ -31,6 +32,7 @@
                             <td>{{$moblie->priscall}}</td>
                             <td>{{$moblie->namegiv}}</td>
                             <td>{{$moblie->timegiv}}</td>
+                            <td>{{$moblie->status}}</td>
                              <td>
                                 <a href="{{ route('moble.show', ['id'=> $moblie->id]) }}">عرض</a>
                             </td>

@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
     <div class="container-fluid">
-        <div class="row" style="font-size: 16px;  font-family: 'Cairo', sans-serif; font-weight: bold" dir="rtl" >
+        <div class="row" style="font-size: 16px;  font-family: 'Cairo', sans-serif; font-weight: bold" dir="rtl">
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>صيانة</h5><span>{{$moblie->typedev }}</span>
+                        <h5>صيانة</h5><span>{{ $moblie->typedev }}</span>
                     </div>
-                    <div class="table-responsive" >
+                    <div class="table-responsive">
                         <table class="table">
                             <tbody>
                                 <tr>
@@ -70,21 +70,30 @@
                                     <th scope="row">تاريخ الاستلام</th>
                                     <td>{{ $moblie->timegiv }}</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">ملاحظة</th>
+                                    <td>{{ $moblie->note }}</td>
+                                </tr>
+                                </tr>
+                                <tr>
+                                    <th scope="row">حالة الجهاز   في الشركة</th>
+                                    <td>{{ $moblie->status }}</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
-                   
+
                 </div>
             </div>
             @if (session('seuccs'))
-            <div class="alert alert-dismissible alert-success">
-            <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong style="text-align: center"> تم </strong> {{ session('seuccs')}}
-            </div>
+                <div class="alert alert-dismissible alert-success">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong style="text-align: center"> تم </strong> {{ session('seuccs') }}
+                </div>
             @endif
         </div>
-        <a class="btn btn-info" href="{{ route('moble.print' ,    ['id' => $moblie->id]) }}">طباعة</a>
-        <a class="btn btn-warning " href="{{ route('moble.edit' , ['id' => $moblie->id]) }}">تعديل</a>
+        <a class="btn btn-info" href="{{ route('moble.print', ['id' => $moblie->id]) }}">طباعة</a>
+        <a class="btn btn-warning " href="{{ route('moble.edit', ['id' => $moblie->id]) }}">تعديل</a>
     </div>
     </div>
 

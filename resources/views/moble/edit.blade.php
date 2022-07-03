@@ -89,19 +89,19 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlSelect9">حالة الجهاز</label>
+                    <label for="exampleFormControlSelect9">حالة الجهاز   في الشركة</label>
                     <select name="status" class="form-select digits" id="exampleFormControlSelect9">
-                        <option  value="0">قيد الانتظار</option>
-                        <option  value="1">تم صلاحة</option>
-                        <option  value="2">قطع غير متوفرة</option>
-                        <option  value="3" >مسترد من قبل الزبون</option>
+                        <option  value="قيد الانتظار">قيد الانتظار</option>
+                        <option  value="تم صلاحة">تم صلاحة</option>
+                        <option  value="قطع غير متوفرة">قطع غير متوفرة</option>
+                        <option  value="مسترد من قبل الزبون" >مسترد من قبل الزبون</option>
                     </select>
                 </div>
                 <div class="row">
                     <div class="col">
                         <div class="mb-3">
                             <label  class="col-form-label-sm" for="colFormLabelSm28">ملاحظة</label>
-                            <textarea  value="{{$moblie->note}}"  style="font-weight: bold"  name="note" class="datepicker-here form-control digits" type="text" data-language="en"   > </textarea>
+                            <textarea   style="font-weight: bold"  name="note" class="datepicker-here form-control digits" type="text"  >{{$moblie->note}}</textarea>
                         </div>
                     </div>
                 </div>

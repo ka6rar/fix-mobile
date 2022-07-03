@@ -19,7 +19,7 @@ class MoblieController extends Controller
 
     public function index() 
     {
-        $moblies =   Moble::get();
+        $moblies =   Moble::orderBy('id', 'DESC')->get();
         return view('moble.index' , compact('moblies'));
     }  
 
@@ -144,7 +144,7 @@ class MoblieController extends Controller
         $moblie->note =  $request->note;
         $moblie->status = $request->status ;
         $moblie->save();
-        return redirect()->back()->with('seuccs' , 'seuccs');
+        return   view('moble.show' , compact('moblie'));
 
     }
 }
