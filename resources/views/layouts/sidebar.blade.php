@@ -1,5 +1,5 @@
           <div >
-            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="../../assets/images/pdfimg/MegaPng.png" width="70px" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a>
+            <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="../../assets/images/pdfimg/MegaPng.png" width="7 0px" alt=""><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a>
               <div class="back-btn"><i class="fa fa-angle-left"></i></div>
               <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
             </div>
@@ -18,12 +18,8 @@
                     </div>
                   </li>
                   <li class="sidebar-list">
-                    <label class="badge badge-light-primary">2</label><a class="sidebar-link sidebar-title" href="#"><i data-feather="home"></i><span class="lan-3">لوحة التحكم    
+                    <label class="badge badge-light-primary">2</label><a class="sidebar-link sidebar-title" href="{{ route('home') }}"><i data-feather="home"></i><span class="lan-44">لوحة التحكم    
                     </span></a>
-                    <ul class="sidebar-submenu">
-                      <li><a class="lan-4" href="index.html">hello</a></li>
-                      <li><a class="lan-5" href="dashboard-02.html">Ecommerce</a></li>
-                    </ul>
                   </li>
                   <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="airplay"></i><span class="lan-611" style="font-family: 'Cairo', sans-serif;">الاجهزة</span></a>
                     <ul class="sidebar-submenu" >

@@ -42,7 +42,7 @@
     <link id="color" rel="stylesheet" href="../../assets/css/color-1.css" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('../app/app.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('../../app/app.css')}}">
 
 
 </head>
@@ -106,7 +106,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 footer-copyright text-center">
-                            <p class="mb-0">Copyright 2021 © Cuba theme by pixelstrap </p>
+                            <p class="mb-0">Copyright 2021 © Magefix  by Karar jabr </p>
                         </div>
                     </div>
                 </div>
@@ -115,6 +115,7 @@
     </div>
     <!-- latest jquery-->
     <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="{{asset('/js/app.js')}}"></script>
     <!-- Bootstrap js-->
     <script src="../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- feather icon js-->

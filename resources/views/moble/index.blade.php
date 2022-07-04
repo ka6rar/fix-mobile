@@ -36,13 +36,18 @@
                              <td>
                                 <a href="{{ route('moble.show', ['id'=> $moblie->id]) }}">عرض</a>
                             </td>
+                         
                         </tr>
                         @endforeach
                     </tbody>
                 </table>
             </div>
+              
          
         </div>
      
     </div>
+
+
 @endsection
+
